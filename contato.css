@@ -1,0 +1,118 @@
+.formulario{
+    margin-top: 1%;
+    background-color: var(--cor-primaria);
+}
+
+.formulario__texto h3{
+    font-family: var(--fonte-primaria);
+    color: var(--cor-terciaria);
+    font-size: 1.3rem;
+    font-weight: 500;    
+    margin-bottom: 2%;
+}
+
+.formulario__texto p{
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+form{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formulario__nome{
+    background-color: white;
+    padding: 7px 12px;
+    box-shadow: 0px 1px 1px grey;
+    border-radius: 5px;
+}
+
+.erro{
+    color: darkred;
+    font-size: 12px;
+    display: none;
+}
+
+.formulario__nome input{
+    margin-top: 4px;
+}
+
+label{
+    display: block;
+    font-size: 1rem;
+    color: gray;
+}
+
+.label-active{
+    color: var(--cor-terciaria);
+}
+
+input{
+    width: 100%;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-primaria);
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+}
+
+textarea{
+    font-family: var(--font);
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+    height: 156px;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    box-shadow: 0px 1px 1px grey;   
+}
+
+.formulario__email{
+    background-color: white;
+    padding: 8px 10px;
+    box-shadow: 0px 1px 1px grey;
+    border-radius: 3px;
+}
+
+#assunto{
+    padding: 16px 12px;
+    box-shadow: 0px 1px 1px grey;
+}
+
+.formulario__email input{
+    margin-top: 4px;
+}
+
+.botaoForm{
+    background-color: var(--cor-terciaria);
+    padding: 1rem;
+    font-family: var(--fonte-primaria);
+    color: var(--cor-secundaria);
+    border: none;
+    margin-top: 3%;
+    cursor: pointer;
+}
+
+.botaoForm:disabled{
+    background-color: var(--cor-terciaria);
+    cursor: not-allowed;
+}
+
+.botaoForm:not(:disabled):hover{
+    background-color: var(--cor-terciária);
+    transition: 0,2s;
+}
+
+#mensagemEnviada{
+    color: var(--cor-terciaria);
+    font-size: 16px;
+    margin-top: 20px;
+}
